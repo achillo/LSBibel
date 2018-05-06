@@ -1,17 +1,17 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Bible Multiple Version</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <div>Veillez s'il vous plait choisir une version</div>
+  <ion-card *ngFor="let bible of bibles" (click)="openBible(bible)">
+    <ion-card-header>
+      {{bible.name}}
+    </ion-card-header>
+    <ion-card-content>
+      {{bible.year}}
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -1,0 +1,22 @@
+<!--
+  Generated template for the BookPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{book.bname}} ({{book.CHAPTER.length}}) </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list>
+  <ion-item *ngFor="let item of book.CHAPTER" (click)="openChapter(item)">
+    chapitre {{item.cnumber}} ({{item.VERS.length}} versets)
+  </ion-item>
+</ion-list>
+</ion-content>

@@ -1,0 +1,17 @@
+page-chapter {
+    .label-md, .label-ios {
+        margin: 8px 8px 8px 0;
+    }
+
+    .label .vnumber{
+        position: relative;
+        top: -2px;
+    }
+    ul.pagination{
+        margin: 0;
+        padding-left: 1.2em;
+    }
+    ul.pagination li{
+        display: inline-block;
+    }
+}
